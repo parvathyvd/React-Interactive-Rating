@@ -30,9 +30,9 @@ body{
 
 .app{
    background: var(--dark-blue);
-   max-width: 30rem;
+   max-width: 23rem;
    margin: 0 auto;
-   padding: 3rem 4rem;
+   padding: 2rem;
    border-radius: 30px;
    position: absolute;
    top: 50%;
