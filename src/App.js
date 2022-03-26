@@ -1,24 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Rating from "./Rating";
+import ThankYou from './ThankYou';
 
 function App() {
+  const [openThankYou, setOpenThankYou] = useState(false);
+  const [rating, setRating] = useState(null);
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+    if(!rating){
+      return
+    }
+    setOpenThankYou(true)
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <main className="app">
+      <div className="app__content">
+       {!openThankYou && <Rating onSubmit={onSubmitHandler} rating={rating} setRating={setRating}/>}
+        {openThankYou && <ThankYou rating={rating}/>}
+      </div>
+    </main>
+    <footer>
+    <div className="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/parvathyvd">Parvathy Vazhoor</a>.
+  </div>
+    </footer>
+    </>
+   
   );
 }
 
