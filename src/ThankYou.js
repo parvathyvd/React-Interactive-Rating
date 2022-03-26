@@ -3,7 +3,7 @@ import React from "react";
 const ThankYou = ({rating}) => {
   return (
         <div className="thank-you">
-          <img src="./images/illustration-thank-you.svg" alt="" />
+          <img src="./images/illustration-thank-you.svg" alt="credit" />
           <span className="rating__text">You selected {rating} out of 5</span>
           <h2>Thank You!</h2>
            <p className="text-center">
