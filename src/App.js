@@ -25,8 +25,8 @@ function App() {
     </main>
     <footer>
     <div className="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a target="_blank" href="https://www.frontendmentor.io/profile/parvathyvd">Parvathy Vazhoor</a>.
+    Challenge by <a  rel="noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a  target="_blank" rel="noreferrer" href="https://www.frontendmentor.io/profile/parvathyvd">Parvathy Vazhoor</a>.
   </div>
     </footer>
     </>
